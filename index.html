@@ -1,0 +1,251 @@
+<html>
+<head>
+ <title>Learn JavaScript</title>   
+</head>
+<body>
+<h1>We are going to learn JavaScript in one Video</h1>
+<h2>What is JavaScript</h2>
+<p>JavaScript is My favourite Programming language</p>
+<hr>
+
+<!-- <h1 id = "my-content"></h1> -->
+<h2 style="display: none;" id="change-content-heading">My college name is PREC</h2>
+<button onclick="changecontent()">Change</button>
+<!-- onclick is like listener type -->
+
+<!-- external JavaScript  -->
+<!-- <script src="myjs.js"></script> -->
+
+<!-- internal JavaScript  -->
+
+<script>
+
+/*
+document.write("<br>")
+document.write("This is my first line from JavaScript");
+document.write("<h2>This is my second line from JavaScript</h2>"); */
+
+// comment
+/* Author:Durgesh 
+    City:Lacknow */
+
+    // functions
+/*
+document.write(3+4)
+document.write("<br>")
+alert("hello world")
+window.alert("how are you?")
+
+//document.write(prompt("Enter name"))
+// or
+name=prompt("Enter Name")
+document.write(name)
+
+document.write("<br>")
+
+document.write(confirm("Would you like to exit?"))
+
+document.write("<br>")
+
+// making any html element dynamic
+
+document.getElementById("my-content").innerHTML="This is dynamic content"
+
+// variables
+
+var a = 10
+var b = 20
+// document.write(a+b)
+// document.write("a+b="+(a+b))
+document.write("a+b=",(a+b),"<br>")
+document.write("b-a=",(b-a),"<br>")
+document.write("a*b=",(a*b),"<br>")
+document.write("b/a=",(b/a),"<br>")
+document.write("b%a=",(b%a),"<br>")
+
+// to know type of variable
+
+document.write(typeof a,"<br>")
+
+var name = 'techsoft india'
+
+document.write(typeof name,"<br>")
+
+// we can also use let keyword to create variable
+let abc = 234
+document.write(abc,"<br>")
+
+// identifiers and literals 
+
+ var efg = 45
+ var name1 = 'saurabh'
+ var my_name = "supriya"
+ var $college = "PREC"
+
+ // here identifiers are-abc,name1,my_name,$college
+
+ // datatypes
+
+//1] number
+ var n1 = 56.10
+ document.write(n1,"<br>")
+document.write(typeof n1,"<br>")
+
+//2]string
+var surname = "Mandlik";
+document.write(surname,"<br>")
+document.write(typeof surname,"<br>")
+document.write(surname.length,"<br>")
+document.write(surname.toUpperCase(),"<br>")
+document.write(surname.toLowerCase(),"<br>")
+document.write(surname.charAt(0),"<br>")
+
+//3]boolean
+var  x = true
+var y = false
+document.write(x,"<br>")
+document.write(y,"<br>")
+document.write(typeof x ,"<br>")
+document.write(typeof y , "<br>")
+
+//4] object
+var ob = {}
+document.write(typeof ob , "<br>")
+
+var obj = { 'name' : 'durgesh' }
+document.write(obj[ 'name' ])
+
+document.write("<br>")   */
+
+//5] array
+// var nums = [23, 32, 12, 32, 23]
+// document.write(nums.length , "<br>")
+// document.write(nums[0] , "<br>")
+// document.write(typeof nums , "<br>")
+
+// control statements
+// var a = 45
+// if(a > 0){
+//      document.write("positive")
+// }
+
+// document.write("<br>")
+
+// to take number from user
+// var n = prompt("Enter number")
+// var b = parseInt(n)
+// if(b > 0){
+//    document.write("Positive")
+// }
+//  else if(b < 0) {
+//     document.write("negative")    
+// }
+// else{
+//     document.write("Zero")
+// }
+
+// document.write("<br>")
+
+// loops
+// for loop
+// for( var i = 1 ; i <= 10 ; i++)
+// {
+//     document.write("<h2>" , "Hello World" , i , "<h2>")
+// }
+
+// document.write("<br>")
+
+// var s = 0
+// n = parseInt(prompt("Enter number"))
+// for( var i = 1 ; i<=n ; i++){
+//   s = s + i
+// }
+// document.write("sum : " , s)
+// document.write("<br>")
+
+// while loop
+
+// var i = 1
+// while(i <= 10)
+// {
+//     document.write(i , "<br>")
+//     i++
+// }
+
+
+// var j = 1
+// while( true ){
+//     document.write( "value" , j , "<br>")
+//     if(j == 15 )
+//     {
+//       break;
+//     }
+//     j++;
+// }
+
+// document.write("<br>")
+
+// for(var k = 1; k<=5 ; k++ )
+// {
+//     if(k == 3 )
+//     {
+//       continue
+//     }
+//     document.write(" welcome " , k , "<br>")
+   
+// }
+
+// dowhile loop
+
+// var k = 1
+// do{
+//     document.write("home" , k , "<br>")
+//     k++
+// }while(k <= 5 )
+
+// array
+// var names = [ 'supriya' , 'kajal' , 'samruddhi' , 'shivani' , 'swapnali']
+
+// document.write(names.length)
+// document.write("<br>")
+
+// for(var i = 0 ; i <= names.length-1 ; i++)
+// {
+//     document.write(names[i] , "<br>")
+// }
+
+// function in javascript
+// function sayHello(){
+//     document.write("Hello World")
+// }
+
+// // calling function
+// sayHello()
+// document.write("<br>")
+// sayHello()
+// document.write("<br>")
+
+// function dosum(a , b)
+// {
+//    return a+b ;
+// }
+
+// var res = dosum( 3 , 4);
+// document.write( res , "<br>")
+
+function changecontent(){
+   // alert("test")
+   var element = document.getElementById("change-content-heading");
+   element.innerHTML = "this is new content";
+
+element.style.display = "block";
+element.style.color = "red";
+element.style.backgroundColor = "yellow";
+
+document.body.style.backgroundColor = "skyblue"
+
+}
+
+</script>
+</body>
+</html>

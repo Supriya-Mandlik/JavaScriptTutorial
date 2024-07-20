@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Strings and String methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="dynamiccontent"></div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non deleniti optio error quibusdam natus dolore, quam quidem quod amet neque ipsam, veniam veritatis. Officiis natus excepturi in delectus libero aperiam. Mollitia molestiae reiciendis quas.</p>
+    </div>
+    <script>
+        // var string="this";
+        var string='this';
+        var name="Harry's";
+        var message='a "good" boy';
+        console.log(string);
+        console.log(name);
+        console.log(message);
+        console.log(string+" "+name+" "+message);
+        var channel='CodeWithHarry';
+
+        //template literal
+        var temp = ` ${name} a 'nice' person and he has a "channel" called ${channel}`;
+        // `` -> backticks
+        console.log(temp);
+
+        // length of variable
+        var len=channel.length;
+        console.log(`Length of channel is ${len}`);
+
+        //escape sequence character
+        console.log("Hello \\world\nHarry\tand\bor");  
+        //where \n ,\\ , \t , \b is escape sequence character 
+        // \n - it represents new line
+        // \t represents space
+        // \\ is used to print single \
+        // \b is backspace character
+
+        // using constructor making string
+        var s = new String("that");
+        console.log(s);
+
+        // inserting element dynamically
+        document.getElementById('dynamiccontent').innerHTML = '<h3>this is an h3 heading</h3>'
+    </script>
+</body>
+</html>

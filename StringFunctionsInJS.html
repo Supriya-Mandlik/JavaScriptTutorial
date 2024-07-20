@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var str="This is a string";
+        console.log(str);
+
+        // indexOf 
+        // first occurance of substring
+       var position=str.indexOf('is');
+       console.log(position);
+
+    //    lastIndexOf 
+       // last occurance of substring
+      var position2=str.lastIndexOf('is');
+      console.log(position2);
+
+      //substring from a string
+    //   slice 
+      var substr=str.slice(1,6);
+      console.log(substr);
+
+    //   substring 
+      var substr2=str.substring(1,6);
+      console.log(substr2);
+    //   slice and substring are same but the only difference is slice can take negative values whereas substring only takes positive values 
+
+    // substr 
+    var substr3=str.substr(1,2);
+      console.log(substr3);
+    //  here substr(from where we want to extract , how much character we want to extract)
+
+    // replace 
+    var replaced = str.replace('string' , 'Harry');
+    console.log(str);
+    console.log(replaced);
+
+    // toUpperCase 
+    console.log(str.toUpperCase());
+
+    // toLowerCase 
+    console.log(str.toLowerCase());
+
+    // concat
+    var newstring = str.concat(' New String');
+    console.log(newstring);
+
+    // trim 
+    var strWithWhiteSpaces = "    this contains        whitespaces  ";
+    console.log(strWithWhiteSpaces);
+    console.log(strWithWhiteSpaces.trim());
+
+    // charAt 
+    var char3 = str.charAt(2);
+    console.log(char3);
+
+    // charCodeAt 
+    var char2 = str.charCodeAt(8);
+    console.log(char2);
+
+    console.log(str[2])
+    </script>
+</body>
+</html>

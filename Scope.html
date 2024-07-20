@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope , and conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        // there are two ways to declare variables in string 1]var 2]let
+        // the scope of var is global 
+        // the scope of let is block level 
+        var string1 = "This is a string";
+        var string1 = "This is a Harry";
+        console.log(string1);
+        // using var we can redeclare the variable 
+
+        let a='u';
+      //  let a='b';  //using let we can not redeclare the variable once it is declared
+      {
+        let a ='b';
+        console.log(a);
+        /* we can redeclare the variable in block as let is block level variable and this value is applicable only within the block */
+      }
+     console.log(a);
+
+     // constant
+     const c = "This can not be changed";
+    // c = "I want to change this . This can not be changed";
+    // we can not change const variable
+     console.log(c);
+
+     // ifelse
+     let age=2;
+     if (age>18) {
+        console.log("You can drink cold Drink");
+      } else if(age==2){
+       console.log("Age is 2");
+     } else {
+        console.log("You can drink Water");
+     }
+
+     // switch case statement
+     const cup = 42;
+     switch (cup) {
+        case 4:
+            console.log("The value of cup is 4");
+            break;
+
+            case 41:
+            console.log("The value of cup is 41");
+            break;
+
+            case 42:
+            console.log("The value of cup is 42");
+            break;
+
+            case 43:
+            console.log("The value of cup is 43");
+            break;
+     
+        default:
+            console.log("value of cup is none of 4,41,42,43");
+            break;
+     }
+
+
+    </script>
+</body>
+</html>

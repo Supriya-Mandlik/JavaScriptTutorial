@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in JS</title>
+</head>
+<body>
+    <div class="container">simple si html</div>
+    <script>
+
+        //primitive data types
+        let myvar = 34;
+        let myvar2 = "string";
+        let myvar3 = true;
+        console.log(myvar3);
+        let myvar4 = null;
+        console.log(myvar4);
+        let myvar5 = undefined;
+        console.log(myvar5);
+
+        //objects
+        let employee = {
+            name:"Harry",
+            salary:10,
+            channel:"CodeWithHarry",
+            channel2:"CodeWithHarry2",
+        }
+        console.log(employee);
+        // in console we can get values by two ways 1] employee.name 2]employee['name']
+
+        //array
+        let names = [41,2,4,"Harry",undefined];
+        console.log(names);
+        console.log(names[0]);
+
+        let arr = new Array(41,2,23,4,5);
+        console.log(arr);
+        console.log(arr.length);
+
+        //sorting
+       names = names.sort();
+        console.log(names);
+
+        // to add element at end
+        names.push('This is pushed');
+        console.log(names);
+
+       let arr2 = new Array(23);
+       console.log(arr2); 
+
+       
+
+
+    </script>
+</body>
+</html>
